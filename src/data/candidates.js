@@ -8,7 +8,7 @@ export const candidateDetails = {
     election: "서울특별시장",
     tag: "현직 · 3선",
     status: "현직 서울시장",
-    img: null,
+    img: "https://upload.wikimedia.org/wikipedia/commons/a/a3/%EC%98%A4%EC%84%B8%ED%9B%88_%EC%84%9C%EC%9A%B8%EC%8B%9C%EC%9E%A5_%28cropped_3%29.jpg",
     profile: {
       education: [
         "서울미동국민학교 (졸업)",
@@ -74,7 +74,7 @@ export const candidateDetails = {
     election: "서울특별시장",
     tag: "前 성동구청장",
     status: "전직 성동구청장",
-    img: null,
+    img: "https://upload.wikimedia.org/wikipedia/commons/4/44/%EC%84%B1%EB%8F%99%EA%B5%AC%EC%B2%AD%EC%9E%A5_%EC%A0%95%EC%9B%90%EC%98%A4.jpg",
     profile: {
       education: [
         "학력 정보 확인 필요 (선관위 참고)",
@@ -117,7 +117,7 @@ export const candidateDetails = {
     election: "서울특별시장",
     tag: "",
     status: "정의당 후보",
-    img: null,
+    img: "https://res.cloudinary.com/dp3l8psih/image/upload/v1778051731/justice-election-2026/eceu9yzm80qvmuwqxugc.jpg",
     profile: {
       education: ["정보 확인 필요"],
       career: [
@@ -153,7 +153,7 @@ export const candidateDetails = {
     election: "강남구청장",
     tag: "前 서울시의회 의장",
     status: "전직 서울시의회 의장",
-    img: null,
+    img: "https://imgnews.naver.net/image/047/2026/03/31/0002510120_001_20260331144614938.jpg",
     profile: {
       education: [
         "학력 정보 확인 필요",
@@ -205,7 +205,7 @@ export const candidateDetails = {
     election: "강남구청장",
     tag: "현 강남구의원",
     status: "현직 강남구의원 (개포1·2·4동)",
-    img: null,
+    img: "https://imgnews.naver.net/image/047/2026/04/14/0002512006_001_20260414181611168.jpg",
     profile: {
       education: [
         "학력 정보 확인 필요",
@@ -256,7 +256,7 @@ export const candidateDetails = {
     election: "서울시교육감",
     tag: "진보 단일후보",
     status: "진보진영 단일후보 (추진위 경선 승리)",
-    img: null,
+    img: "https://imgnews.pstatic.net/image/origin/277/2024/10/17/5485431.jpg",
     profile: {
       education: ["정보 확인 필요"],
       career: [
@@ -293,7 +293,7 @@ export const candidateDetails = {
     election: "서울시교육감",
     tag: "보수 단일후보",
     status: "보수진영 단일후보 (시민회의 경선 승리)",
-    img: null,
+    img: "https://imgnews.naver.net/image/003/2026/05/20/NISI20260520_0021289347_web_20260520094159_20260520094228082.jpg",
     profile: {
       education: ["정보 확인 필요"],
       career: [

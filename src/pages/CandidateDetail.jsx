@@ -74,8 +74,14 @@ export default function CandidateDetail() {
         {/* Candidate Header */}
         <div className="bg-white rounded-2xl border border-gray-100 p-6 sm:p-8 mb-6">
           <div className="flex items-start gap-4">
-            <div className="flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white font-bold text-2xl shadow-md">
-              {candidate.name.charAt(0)}
+            <div className="flex-shrink-0 w-20 h-20 rounded-2xl bg-gray-100 overflow-hidden shadow-md">
+              {candidate.img ? (
+                <img src={candidate.img} alt={candidate.name} className="w-full h-full object-cover" />
+              ) : (
+                <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white font-bold text-2xl">
+                  {candidate.name.charAt(0)}
+                </div>
+              )}
             </div>
             <div className="flex-1 min-w-0">
               <div className="flex items-center gap-2 flex-wrap">

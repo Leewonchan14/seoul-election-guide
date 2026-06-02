@@ -29,8 +29,18 @@ function PartyBadge({ party, className = "" }) {
 
 function CandidateCard({ candidate }) {
   const hasDetail = candidateDetails[candidate.name];
+  const detail = candidateDetails[candidate.name];
   const CardContent = (
-    <div className="flex items-start justify-between gap-3">
+    <div className="flex items-start gap-3">
+      <div className="flex-shrink-0 w-12 h-12 rounded-xl bg-gray-100 overflow-hidden">
+        {detail?.img ? (
+          <img src={detail.img} alt={candidate.name} className="w-full h-full object-cover" />
+        ) : (
+          <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-700 flex items-center justify-center text-white font-bold text-sm">
+            {candidate.name.charAt(0)}
+          </div>
+        )}
+      </div>
       <div className="flex-1 min-w-0">
         <div className="flex items-center gap-2 flex-wrap">
           <h4 className="text-lg font-bold text-gray-900">{candidate.name}</h4>
