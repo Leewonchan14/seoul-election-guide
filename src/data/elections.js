@@ -1,0 +1,77 @@
+export const elections = [
+  {
+    id: 1,
+    title: "서울특별시장",
+    desc: "서울시 행정·예산 총괄하는 최고 책임자 · 예산 약 40조 원",
+    color: "bg-blue-600",
+    candidates: [
+      { name: "오세훈", age: 65, party: "국민의힘", partyColor: "people-power", tag: "현직 · 3선", desc: "GTX · 글로벌 TOP3 서울 · 주택·청년 정책" },
+      { name: "정원오", age: 61, party: "민주당", partyColor: "democrat", desc: "前 성동구청장 · GTX 철근 누락 부각 · 교체론" },
+      { name: "권영국", age: 58, party: "정의당", partyColor: "justice", desc: "정의당 소속 · 노동·복지 정책 강조" },
+    ],
+  },
+  {
+    id: 2,
+    title: "서울시교육감",
+    desc: "초·중·고 교육 총괄 · 예산 약 10조 원 · 정당 후보 아님 · 8파전",
+    color: "bg-emerald-600",
+    candidates: [
+      { name: "정근식", party: "진보진영", partyColor: "independent", tag: "진보 단일후보", desc: "전교조 출신 · 교육격차 해소 · 진보진영 경선 승리" },
+      { name: "윤호상", party: "보수진영", partyColor: "conservative-unity", tag: "보수 단일후보", desc: "시민회의 경선 승리 · 교육 자율성 강조" },
+      { name: "한만중", party: "진보", partyColor: "independent", desc: "경선 불복 독자 출마 · 교육 공공성 강화" },
+      { name: "조전혁", party: "보수", partyColor: "conservative-unity", desc: "보수 독자 출마 · 자유교육 · 학력 강조" },
+      { name: "홍제남", party: "진보", partyColor: "independent", desc: "완주 선언 · 교육 민주화" },
+      { name: "류수노", party: "보수", partyColor: "conservative-unity", desc: "경선 불복 · 교육 정상화" },
+      { name: "김영배", party: "보수", partyColor: "conservative-unity", desc: "경선 불복 · 단일화 협상 중" },
+      { name: "이학인", party: "중도", partyColor: "independent", tag: "중도", desc: "유일한 중도 성향 · 교육 중립성" },
+    ],
+  },
+  {
+    id: 3,
+    title: "강남구청장",
+    desc: "미성동이 속한 강남구의 행정 수장",
+    color: "bg-violet-600",
+    candidates: [
+      { name: "김현기", age: 70, party: "국민의힘", partyColor: "people-power", desc: "前 서울시의회 의장(4선) · 재건축 · 로봇산업 클러스터 · GBC 조기 완공" },
+      { name: "김형곤", age: 55, party: "민주당", partyColor: "democrat", tag: "현 강남구의원", desc: "재건축 TF · 응급의료 인프라 · 국제학교 유치 · SETEC 신청사" },
+    ],
+  },
+  {
+    id: 4,
+    title: "서울시의원 — 지역구",
+    desc: "강남구 선거구 · 미성동(법정동 역삼동)은 강남구 제2선거구(역삼·도곡·개포·일원·수서·세곡)",
+    color: "bg-amber-600",
+    note: "정확한 선거구 구분은 선관위 공고 확인 필요",
+    noteType: "info",
+    candidates: [
+      { name: "후보명", party: "국민의힘", partyColor: "people-power", desc: "추가 정보 확인 필요 (선관위 참고)" },
+      { name: "후보명", party: "민주당", partyColor: "democrat", desc: "추가 정보 확인 필요 (선관위 참고)" },
+    ],
+  },
+  {
+    id: 5,
+    title: "서울시의원 — 비례대표",
+    desc: "정당에 투표합니다 · 8개 이상 정당 참여",
+    color: "bg-cyan-600",
+    isProportional: true,
+  },
+  {
+    id: 6,
+    title: "강남구의원 — 지역구",
+    desc: "미성동이 속한 선거구 · 2명 중 1명 선출 (예상)",
+    color: "bg-rose-600",
+    note: "⚠️ 정확한 선거구와 선출 인원은 선관위 확인 필요",
+    noteType: "warning",
+    candidates: [
+      { name: "이동호", age: 52, party: "국민의힘", partyColor: "people-power", desc: "위례과천선 개포역사 신설 · 동부간선도로 지하화 · 개포시장 주차장 확충" },
+      { name: "(상대 후보)", age: "", party: "민주당", partyColor: "democrat", desc: "추가 정보 확인 필요 (선관위 참고)" },
+    ],
+  },
+  {
+    id: 7,
+    title: "강남구의원 — 비례대표",
+    desc: "정당에 투표합니다 · 강남구 4개 이상 정당 참여",
+    color: "bg-orange-600",
+    isProportional: true,
+  },
+];

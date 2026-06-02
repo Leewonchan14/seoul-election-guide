@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563eb;
+  --color-primary-light: #3b82f6;
+  --color-primary-dark: #1d4ed8;
+  --color-democrat: #004ea2;
+  --color-people-power: #e61e2a;
+  --color-reform: #ff6b00;
+  --color-independent: #6b7280;
+  --color-conservative-unity: #dc2626;
+}
