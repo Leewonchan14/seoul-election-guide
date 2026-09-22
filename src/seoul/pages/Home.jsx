@@ -142,7 +142,7 @@ export default function Home() {
       {/* Header */}
       <header className="sticky top-0 z-50 backdrop-blur-xl bg-white/80 border-b border-gray-200/60">
         <div className="max-w-3xl mx-auto px-4 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-3">
+          <a href={import.meta.env.BASE_URL} className="flex items-center gap-3">
             <div className="w-8 h-8 rounded-lg bg-blue-600 flex items-center justify-center">
               <Vote className="w-4 h-4 text-white" />
             </div>
@@ -150,8 +150,15 @@ export default function Home() {
               <h1 className="text-base font-bold text-gray-900 leading-tight">미성동 선거안내</h1>
               <p className="text-xs text-gray-500">서울 · 6·3 지방선거</p>
             </div>
-          </div>
+          </a>
           <div className="flex items-center gap-2 text-sm">
+            <a
+              href={`${import.meta.env.BASE_URL}incheon/`}
+              className="inline-flex items-center gap-1 px-2.5 py-0.5 rounded-full border border-gray-200 text-xs font-medium text-gray-600 hover:border-emerald-300 hover:text-emerald-700 transition-colors"
+            >
+              <MapPin className="w-3 h-3" />
+              인천 신흥동
+            </a>
             <span className="hidden sm:inline-flex items-center gap-1 px-2 py-0.5 rounded-full bg-gray-100 text-gray-500 text-xs font-medium">사전투표 마감</span>
             <span className="font-semibold text-blue-600 bg-blue-50 px-3 py-1 rounded-full">본투표 6.3 D-1</span>
           </div>
