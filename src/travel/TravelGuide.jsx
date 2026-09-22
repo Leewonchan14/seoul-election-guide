@@ -3,6 +3,7 @@ import { ChevronRight, Moon, Sun } from "lucide-react";
 
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
+import { HeroSlideshow } from "./HeroSlideshow";
 import { PlaceCard } from "./PlaceCard";
 import { SeasonTimeline } from "./SeasonTimeline";
 import { Checklist } from "./Checklist";
@@ -11,6 +12,7 @@ import {
   checklist,
   credits,
   hero,
+  heroSlides,
   marquee,
   officialAccounts,
   sections,
@@ -174,28 +176,7 @@ export default function TravelGuide() {
               </div>
             </div>
 
-            <figure className="m-0 flex flex-col overflow-hidden rounded-2xl border border-[var(--t-line)] bg-[var(--t-surface)]">
-              <div className="relative flex-1">
-                <img
-                  src={`${import.meta.env.BASE_URL}travel/assets/${hero.image.src}`}
-                  alt={hero.image.alt}
-                  className="h-full min-h-[320px] w-full object-cover"
-                />
-                <figcaption style={{ background: "linear-gradient(0deg, rgba(0,0,0,0.88), rgba(0,0,0,0.38) 55%, transparent)" }}
-                  className="absolute inset-x-0 bottom-0 px-3.5 py-3 text-[12px] text-[#e9eaec] [text-shadow:0_1px_2px_rgba(0,0,0,0.55)]">
-                  사진{" "}
-                  <a
-                    href={hero.image.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="border-b border-white/35"
-                  >
-                    {hero.image.credit}
-                  </a>{" "}
-                  · {hero.image.meta}
-                </figcaption>
-              </div>
-            </figure>
+            <HeroSlideshow slides={heroSlides} />
           </div>
         </section>
 

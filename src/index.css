@@ -186,6 +186,28 @@
   }
 }
 
+/* 히어로 슬라이드쇼 */
+@keyframes travel-kenburns {
+  from {
+    transform: scale(1.02);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+.travel .kenburns {
+  animation: travel-kenburns 9s ease-out both;
+}
+
+@keyframes travel-slide-progress {
+  from {
+    transform: scaleX(0);
+  }
+  to {
+    transform: scaleX(1);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   .travel *,
   .travel *::before,

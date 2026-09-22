@@ -909,6 +909,73 @@ export const checklist = [
   "축제 셔틀과 주차는 <b>축제 홈페이지 기준</b>으로 방문 전 재확인."
 ];
 
+export const heroSlides = [
+  {
+    "src": "hero-autumn.jpg",
+    "alt": "내장산 단풍",
+    "place": "내장산",
+    "credit": "내장산 단풍",
+    "url": "https://commons.wikimedia.org/wiki/File:%EB%82%B4%EC%9E%A5%EC%82%B0%EC%9D%98_%EB%8B%A8%ED%92%8D1.jpg",
+    "meta": "CC BY-SA 3.0"
+  },
+  {
+    "src": "seoraksan-autumn.jpg",
+    "alt": "설악산 단풍",
+    "place": "강원 단풍",
+    "credit": "설악산 단풍",
+    "url": "https://commons.wikimedia.org/wiki/File:Seoraksan_in_the_Fall_1-_%EC%84%A4%EC%95%85%EC%82%B0_%EB%8B%A8%ED%92%8D.jpg",
+    "meta": "Joycekim77 · CC BY-SA 3.0"
+  },
+  {
+    "src": "baegyangsa.jpg",
+    "alt": "장성 백양사 쌍계루와 백학봉",
+    "place": "중부 · 남부 명소",
+    "credit": "백양사 쌍계루",
+    "url": "https://commons.wikimedia.org/wiki/File:%EC%9E%A5%EC%84%B1_%EB%B0%B1%EC%96%91%EC%82%AC_%EC%8C%8D%EA%B3%84%EB%A3%A8%EC%99%80_%EB%B0%B1%ED%95%99%EB%B4%89_2019%EB%85%84_%EC%B4%AC%EC%98%81(%EC%B6%9C%EC%B2%98_%EB%AC%B8%ED%99%94%EC%9E%AC%EC%B2%AD_%EB%8C%80%EB%B3%80%EC%9D%B8%EC%8B%A4).jpg",
+    "meta": "문화재청 · KOGL Type 1"
+  },
+  {
+    "src": "changdeokgung-huwon.jpg",
+    "alt": "창덕궁 후원 가을",
+    "place": "수도권 단풍",
+    "credit": "창덕궁 후원",
+    "url": "https://commons.wikimedia.org/wiki/File:Biwon_Huwon_of_Changdeokgung.jpg",
+    "meta": "Christian Bolz · CC BY-SA 4.0"
+  },
+  {
+    "src": "taebaeksan-winter.jpg",
+    "alt": "태백산 설경",
+    "place": "평창 · 인제 · 강릉 설경",
+    "credit": "태백산 설경",
+    "url": "None",
+    "meta": "Franguiche · CC BY-SA 4.0"
+  },
+  {
+    "src": "buncheon-station.jpg",
+    "alt": "분천역 산타마을 승강장",
+    "place": "분천역 산타마을 · 협곡열차",
+    "credit": "분천역 산타마을",
+    "url": "https://commons.wikimedia.org/wiki/File:Buncheon_Station_Platform_santa-town_20230501.jpg",
+    "meta": "Rsa · CC BY-SA 3.0"
+  },
+  {
+    "src": "gyeongju-wolji.jpg",
+    "alt": "경주 동궁과 월지",
+    "place": "연말 도시 코스",
+    "credit": "동궁과 월지",
+    "url": "https://commons.wikimedia.org/wiki/File:Donggung_Palace_%26_Wolji_Pond,_Gyeongju_-_Donggung2687.jpg",
+    "meta": "lumoplank · CC0"
+  },
+  {
+    "src": "seoul-lantern.jpg",
+    "alt": "서울빛초롱축제 청계천 등불",
+    "place": "서울 도심 빛 · 크리스마스",
+    "credit": "서울빛초롱축제",
+    "url": "https://commons.wikimedia.org/wiki/File:Blue_Lanterns_at_the_2019_Seoul_Lantern_Festival.jpg",
+    "meta": "Ethan Doyle White · CC BY-SA 4.0"
+  }
+];
+
 export const marquee = [
   "단풍 절정 10월 말",
   "은행나무 11월 초",
