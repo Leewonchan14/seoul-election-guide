@@ -148,7 +148,7 @@ export function HeroSlideshow({ slides, interval = SLIDE_MS }) {
         </Button>
       </div>
 
-      <div className="absolute bottom-3.5 right-3.5 flex items-center gap-1.5">
+      <div className="absolute bottom-2 right-2.5 flex items-center">
         {slides.map((slide, i) => (
           <button
             key={slide.src}
@@ -156,13 +156,17 @@ export function HeroSlideshow({ slides, interval = SLIDE_MS }) {
             onClick={() => goTo(i)}
             aria-label={`${slide.place} 사진 보기`}
             aria-current={i === index}
-            className={cn(
-              "h-1.5 rounded-full transition-all duration-300",
-              i === index
-                ? "w-6 bg-[var(--t-accent)]"
-                : "w-1.5 bg-white/45 hover:bg-white/75",
-            )}
-          />
+            className="group flex h-6 min-w-6 items-center justify-center px-1"
+          >
+            <span
+              className={cn(
+                "block h-1.5 rounded-full transition-all duration-300",
+                i === index
+                  ? "w-6 bg-[var(--t-accent)]"
+                  : "w-1.5 bg-white/45 group-hover:bg-white/80",
+              )}
+            />
+          </button>
         ))}
       </div>
     </div>
