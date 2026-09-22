@@ -1,4 +1,4 @@
-import { Vote, MapPin, ChevronRight } from "lucide-react";
+import { Vote, MapPin, ChevronRight, Leaf } from "lucide-react";
 
 const regions = [
   {
@@ -67,6 +67,25 @@ export default function Landing() {
               </span>
             </a>
           ))}
+        </section>
+
+        <section className="space-y-4">
+          <div className="flex items-center justify-between">
+            <h2 className="text-sm font-semibold text-gray-900">그 외</h2>
+          </div>
+          <a
+            href={`${import.meta.env.BASE_URL}travel/`}
+            className="group flex items-center gap-4 bg-white rounded-2xl border border-gray-100 p-5 hover:shadow-lg hover:border-gray-200 transition-all duration-200"
+          >
+            <div className="w-10 h-10 shrink-0 rounded-xl bg-orange-500 flex items-center justify-center shadow-md">
+              <Leaf className="w-5 h-5 text-white" />
+            </div>
+            <div className="min-w-0">
+              <h3 className="text-lg font-bold text-gray-900">10 · 11 · 12월 여행지 가이드</h3>
+              <p className="mt-1 text-sm text-gray-500">단풍 · 숲길 · 갈대 · 축제 · 설경 · 온천, 목적별 26곳</p>
+            </div>
+            <ChevronRight className="ml-auto w-4 h-4 shrink-0 text-gray-400 group-hover:translate-x-0.5 transition-transform" />
+          </a>
         </section>
 
         <footer className="text-center pb-8">
