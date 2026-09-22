@@ -1,4 +1,7 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 @theme {
   --color-primary: #2563eb;
@@ -9,4 +12,185 @@
   --color-reform: #ff6b00;
   --color-independent: #6b7280;
   --color-conservative-unity: #dc2626;
+}
+
+:root {
+  --radius: 0.875rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.552 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 12%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* ── 여행지 가이드 전용 팔레트 (scoped) ───────────────────────── */
+.travel {
+  --t-bg: #0b0c0e;
+  --t-surface: #121417;
+  --t-surface-2: #171a1f;
+  --t-line: rgba(255, 255, 255, 0.1);
+  --t-line-2: rgba(255, 255, 255, 0.22);
+  --t-ink: #f2f3f5;
+  --t-ink-2: #b3b9c2;
+  --t-ink-3: #7e848e;
+  --t-accent: #ff5a1f;
+  --t-accent-soft: rgba(255, 90, 31, 0.14);
+  --t-oct: #ff7a33;
+  --t-nov: #e3b341;
+  --t-dec: #54c3f0;
+
+  background: var(--t-bg);
+  color: var(--t-ink);
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont,
+    "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  letter-spacing: -0.01em;
+}
+
+.travel.light {
+  --t-bg: #f6f7f9;
+  --t-surface: #ffffff;
+  --t-surface-2: #eef0f3;
+  --t-line: rgba(12, 14, 18, 0.1);
+  --t-line-2: rgba(12, 14, 18, 0.22);
+  --t-ink: #0c0e12;
+  --t-ink-2: #4c525b;
+  --t-ink-3: #7b828c;
+  --t-accent: #e24a12;
+  --t-accent-soft: rgba(226, 74, 18, 0.1);
+  --t-oct: #c8551b;
+  --t-nov: #9a7413;
+  --t-dec: #1b6e96;
+}
+
+.travel .mono {
+  font-family: "Space Grotesk", ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+/* 마퀴 */
+@keyframes travel-marquee {
+  to {
+    transform: translateX(-50%);
+  }
+}
+.travel .marquee-track {
+  display: flex;
+  white-space: nowrap;
+  animation: travel-marquee 46s linear infinite;
+}
+.travel .marquee {
+  mask-image: linear-gradient(90deg, transparent, #000 14%, #000 86%, transparent);
+}
+
+/* 스크롤 진행바 (CSS scroll-driven, 미지원 브라우저는 숨김) */
+@keyframes travel-progress {
+  to {
+    transform: scaleX(1);
+  }
+}
+.travel .progress {
+  transform-origin: 0 50%;
+  transform: scaleX(0);
+}
+@supports (animation-timeline: scroll()) {
+  .travel .progress {
+    animation: travel-progress linear both;
+    animation-timeline: scroll(root);
+  }
+}
+
+/* 카드 등장 (뷰포트 진입) */
+@keyframes travel-rise {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+@supports (animation-timeline: view()) {
+  .travel .rise {
+    animation: travel-rise linear both;
+    animation-timeline: view();
+    animation-range: entry 4% cover 22%;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .travel *,
+  .travel *::before,
+  .travel *::after {
+    animation: none !important;
+    transition: none !important;
+  }
 }
