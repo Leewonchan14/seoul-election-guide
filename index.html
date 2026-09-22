@@ -4,9 +4,20 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/seoul-election-guide/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>미성동 선거안내 — 6·3 지방선거</title>
-    <script type="module" crossorigin src="/seoul-election-guide/assets/index-bni8lCHD.js"></script>
-    <link rel="stylesheet" crossorigin href="/seoul-election-guide/assets/index-kBGmfaSt.css">
+    <title>6·3 지방선거 선거안내 — 지역 선택</title>
+    <script>
+      // 이전 주소(https://leewonchan14.github.io/seoul-election-guide/#/candidate/...)의
+      // 딥링크를 서울 사이트로 넘긴다. 최상위 주소는 이제 지역 선택 화면이다.
+      (function () {
+        var base = "/seoul-election-guide/";
+        if (/^#\/candidate\//.test(location.hash)) {
+          location.replace(base + "seoul/" + location.hash);
+        }
+      })();
+    </script>
+    <script type="module" crossorigin src="/seoul-election-guide/assets/landing-L87d9O9i.js"></script>
+    <link rel="modulepreload" crossorigin href="/seoul-election-guide/assets/jsx-runtime-BK_jBwzf.js">
+    <link rel="stylesheet" crossorigin href="/seoul-election-guide/assets/jsx-runtime-DZRZ7NVK.css">
   </head>
   <body>
     <div id="root"></div>
